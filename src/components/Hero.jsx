@@ -4,13 +4,6 @@ import image1 from '../assets/github.png';
 import image2 from '../assets/linkedin.png';
 
 const Hero = () => {
-  const githubUrl = "https://github.com/tomlewis2023";
-  const linkedInUrl = encodeURIComponent("https://www.linkedin.com/in/tom-lewis-8550a2330/");
-
-  const openLink = (url) => {
-    window.open(decodeURIComponent(url), '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <section
       id="home"
@@ -27,20 +20,12 @@ const Hero = () => {
           View My Work
         </Button>
         <div className="social">
-          <img
-            src={image1}
-            className="social_1"
-            alt="github"
-            onClick={() => openLink(githubUrl)}
-            style={{ cursor: "pointer" }}
-          />
-          <img
-            src={image2}
-            className="social_1"
-            alt="linkedin"
-            onClick={() => openLink(linkedInUrl)}
-            style={{ cursor: "pointer" }}
-          />
+          <a href="https://github.com/tomlewis2023" target="_blank" rel="noopener noreferrer">
+            <img src={image1} className="social_1" alt="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/tom-lewis-8550a2330/" target="_blank" rel="noopener noreferrer">
+            <img src={image2} className="social_1" alt="linkedin" />
+          </a>
         </div>
       </Container>
     </section>
