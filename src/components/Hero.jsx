@@ -24,7 +24,7 @@ const Hero = () => {
         </Button>
         <div className="social">
         <a href="https://github.com/tomlewis2023" target="new"><img src={image1} className="social_1" alt="github" /></a>
-        <a href="#"><img src={image2} className="social_1" alt="linkedin" /></a>
+        <a href="https://www.linkedin.com/in/tom-lewis-8550a2330/"><img src={image2} className="social_1" alt="linkedin" /></a>
 
 
         </div>
