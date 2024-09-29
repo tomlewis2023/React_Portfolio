@@ -4,8 +4,11 @@ import image1 from '../assets/github.png';
 import image2 from '../assets/linkedin.png';
 
 const Hero = () => {
+  const githubUrl = "https://github.com/tomlewis2023";
+  const linkedInUrl = encodeURIComponent("https://www.linkedin.com/in/tom-lewis-8550a2330/");
+
   const openLink = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(decodeURIComponent(url), '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -24,18 +27,18 @@ const Hero = () => {
           View My Work
         </Button>
         <div className="social">
-          <img 
-            src={image1} 
-            className="social_1" 
-            alt="github" 
-            onClick={() => openLink('https://github.com/tomlewis2023')} 
+          <img
+            src={image1}
+            className="social_1"
+            alt="github"
+            onClick={() => openLink(githubUrl)}
             style={{ cursor: "pointer" }}
           />
-          <img 
-            src={image2} 
-            className="social_1" 
-            alt="linkedin" 
-            onClick={() => openLink('https://www.linkedin.com/in/tom-lewis-8550a2330/')} 
+          <img
+            src={image2}
+            className="social_1"
+            alt="linkedin"
+            onClick={() => openLink(linkedInUrl)}
             style={{ cursor: "pointer" }}
           />
         </div>
