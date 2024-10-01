@@ -23,7 +23,7 @@ const Hero = () => {
           <a href="https://github.com/tomlewis2023" target="_blank" rel="noopener noreferrer">
             <img src={image1} className="social_1" alt="github" />
           </a>
-          <a href="https://www.linkedin.com/in/tom-lewis-8550a2330/" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/tom-lewis-8550a2330/" target="_blank" rel="noopener noreferrer">
             <img src={image2} className="social_1" alt="linkedin" />
           </a>
         </div>
