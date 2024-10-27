@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "Full Stack MERN",
-    description: "Full Stack MERN Ecommerce, using React, Taiwind, Express, Cloudinary, Stripe, hosted in Vercel",
+    description: "Full Stack MERN Ecommerce, using React, Tailwind, Express, Cloudinary, Stripe, hosted in Vercel",
     img: proj8,
     link: "https://fullstack-e-commerce-u1vh.vercel.app/"
     
